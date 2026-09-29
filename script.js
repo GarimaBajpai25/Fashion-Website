@@ -1,7 +1,3 @@
-```javascript
-/* =========================
-   PRODUCT DATA
-========================= */
 
 const products = [
 
@@ -611,4 +607,3 @@ categoryCards.forEach(card => {
 ========================= */
 
 displayProducts(products);
-```
