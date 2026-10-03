@@ -1,0 +1,303 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StyleSense - Fashion Recommendation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Style<span>Sense</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#recommendations">Recommendations</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-icons">
+
+            <button id="favoriteBtn" class="icon-btn">
+                ❤️ <span id="favoriteCount">0</span>
+            </button>
+
+            <button id="cartBtn" class="icon-btn">
+                🛍️ <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-heading">YOUR PERSONAL STYLE ASSISTANT</p>
+
+            <h1>
+                Discover Your
+                <span>Perfect Style</span>
+            </h1>
+
+            <p class="hero-text">
+                Find fashion recommendations based on your style,
+                category, color and budget.
+            </p>
+
+            <a href="#recommendations" class="hero-btn">
+                Explore Styles →
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <div class="fashion-circle">
+                👗
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= STYLE QUIZ ================= -->
+
+    <section class="style-section">
+
+        <div class="section-title">
+
+            <p>PERSONALIZED FOR YOU</p>
+
+            <h2>What is your style?</h2>
+
+            <span>
+                Choose your preferences and discover matching outfits.
+            </span>
+
+        </div>
+
+        <div class="style-options">
+
+            <button class="style-btn active" data-style="all">
+                ✨ All Styles
+            </button>
+
+            <button class="style-btn" data-style="casual">
+                👕 Casual
+            </button>
+
+            <button class="style-btn" data-style="formal">
+                👔 Formal
+            </button>
+
+            <button class="style-btn" data-style="party">
+                🥂 Party
+            </button>
+
+            <button class="style-btn" data-style="traditional">
+                🪷 Traditional
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RECOMMENDATIONS ================= -->
+
+    <section id="recommendations" class="recommendation-section">
+
+        <div class="section-heading">
+
+            <div>
+                <p>CURATED FOR YOU</p>
+                <h2>Recommended Outfits</h2>
+            </div>
+
+            <div class="filters">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search outfits..."
+                >
+
+                <select id="categoryFilter">
+
+                    <option value="all">All Categories</option>
+                    <option value="dress">Dresses</option>
+                    <option value="top">Tops</option>
+                    <option value="jeans">Jeans</option>
+                    <option value="saree">Saree</option>
+                    <option value="kurti">Kurti</option>
+
+                </select>
+
+                <select id="colorFilter">
+
+                    <option value="all">All Colors</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="blue">Blue</option>
+                    <option value="pink">Pink</option>
+                    <option value="red">Red</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Products will be generated using JavaScript -->
+
+        <div id="productContainer" class="product-grid"></div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section id="categories" class="categories-section">
+
+        <div class="section-title">
+
+            <p>EXPLORE</p>
+
+            <h2>Shop By Category</h2>
+
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card" data-category="dress">
+                <div class="category-icon">👗</div>
+                <h3>Dresses</h3>
+                <p>Elegant & stylish dresses</p>
+            </div>
+
+            <div class="category-card" data-category="top">
+                <div class="category-icon">👚</div>
+                <h3>Tops</h3>
+                <p>Trendy everyday tops</p>
+            </div>
+
+            <div class="category-card" data-category="jeans">
+                <div class="category-icon">👖</div>
+                <h3>Jeans</h3>
+                <p>Comfortable denim styles</p>
+            </div>
+
+            <div class="category-card" data-category="traditional">
+                <div class="category-icon">🥻</div>
+                <h3>Traditional</h3>
+                <p>Beautiful ethnic fashion</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <p>ABOUT STYLESENSE</p>
+
+            <h2>Fashion that matches you.</h2>
+
+            <p>
+                StyleSense helps you discover outfits according to
+                your personal preferences. Explore different styles,
+                save your favorite outfits and build your own wardrobe.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <strong>100+</strong>
+                    <span>Style Ideas</span>
+                </div>
+
+                <div>
+                    <strong>5</strong>
+                    <span>Fashion Categories</span>
+                </div>
+
+                <div>
+                    <strong>24/7</strong>
+                    <span>Style Inspiration</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="logo">
+            Style<span>Sense</span>
+        </div>
+
+        <p>
+            © 2026 StyleSense. Your personal fashion recommendation platform.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= CART MODAL ================= -->
+
+    <div id="cartModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeCart" class="close-btn">×</button>
+
+            <h2>Your Cart 🛍️</h2>
+
+            <div id="cartItems"></div>
+
+            <div class="cart-total">
+                Total: ₹<span id="cartTotal">0</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
