@@ -136,9 +136,10 @@ const products = [
 ];
 
 
-/* =========================
-   VARIABLES
-========================= */
+
+
+// ==========VARIABLES===================
+
 
 const productContainer =
     document.getElementById("productContainer");
