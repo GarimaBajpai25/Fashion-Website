@@ -178,7 +178,7 @@ let cart = [];
 
 
 
-// ===========================Display PRODUCTS====================
+// =========================  Display PRODUCTS====================
 
 function displayProducts(productList) {
 
