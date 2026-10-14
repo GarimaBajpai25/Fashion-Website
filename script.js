@@ -176,9 +176,9 @@ let favorites = [];
 let cart = [];
 
 
-/* =========================
-   DISPLAY PRODUCTS
-========================= */
+
+
+// ===========================Display PRODUCTS====================
 
 function displayProducts(productList) {
 
