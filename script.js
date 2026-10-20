@@ -138,7 +138,7 @@ const products = [
 
 
 
-// ==========VARIABLES===================
+// ==============variables=======================================
 
 
 const productContainer =
