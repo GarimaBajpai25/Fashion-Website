@@ -358,8 +358,9 @@ searchInput.addEventListener(
 );
 
 
-/* =========================
-   CATEGORY FILTER
+/* =========================================================
+   CATEGORY SECTION==========================================
+    
 ========================= */
 
 categoryFilter.addEventListener(
