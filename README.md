@@ -63,7 +63,7 @@ The project focuses on creating a clean, modern, responsive, and user-friendly f
 
 ## 📂 Project Structure
 
-```text
+```text=============================================
 Fashion-Recommendation-System/
 │
 ├── index.html          # Main webpage
